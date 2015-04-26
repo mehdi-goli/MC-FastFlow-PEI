@@ -1,4 +1,4 @@
-# FastFlow-PEI-V0
+# FastFlow-PEI
 Performance Enhancement Infrastructure(PEI) supports autonomic coordination for [FastFlow](http://sourceforge.net/projects/mc-fastflow/) applications on Heterogeneous(CPU/GPU) multi-core architectures. 
 
 #### Additional requirements
