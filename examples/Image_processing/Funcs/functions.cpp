@@ -35,7 +35,7 @@
  Mehdi Goli: m.goli@rgu.ac.uk*/
 
 #include <ff/ocl/OpenCL_Requirement.hpp>
-#include "/users/mehdi/Thesis/fastflow-2.0.2-paraphrase/examples/Image_processing/Funcs/SDKBitMap.hpp"
+#include "examples/Image_processing/Funcs/SDKBitMap.hpp"
 #include <malloc.h>
 #include <iostream>
 #include <sstream>
