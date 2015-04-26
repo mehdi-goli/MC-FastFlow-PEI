@@ -1,0 +1,121 @@
+{
+	"FF::Node_Subclass" : "ff::ff_farm<ff::adaptive_loadbalancer, ff::ff_gatherer>",
+	"Type" : "FF::FARM",
+	"Local_ID" : -1,
+	"Workers" : [
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 0,
+			"Service_Time" : 0.070282,
+			"Assigned_Processor" : 2,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 1,
+			"Service_Time" : 0.063952,
+			"Assigned_Processor" : 3,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 2,
+			"Service_Time" : 0.064962,
+			"Assigned_Processor" : 0,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 3,
+			"Service_Time" : 0.064643,
+			"Assigned_Processor" : 1,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 4,
+			"Service_Time" : 0.05905,
+			"Assigned_Processor" : 3,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 5,
+			"Service_Time" : 0.065775,
+			"Assigned_Processor" : 1,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 6,
+			"Service_Time" : 0.053777,
+			"Assigned_Processor" : 0,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "worker_advance",
+			"Type" : "FF::NODE",
+			"Local_ID" : 7,
+			"Service_Time" : 0.052483,
+			"Assigned_Processor" : 2,
+			"Status" : 1
+		}
+	],
+	"Service_Time" : 18.273282,
+	"Emitter" : {
+		"FF::Node_Subclass" : "ff::adaptive_loadbalancer",
+		"Type" : "FF::LOADBALANCER",
+		"Service_Time" : 15.92024,
+		"Assigned_Processor" : 3,
+		"Filter" : {
+			"FF::Node_Subclass" : "Emitter_ad"
+		},
+		"Masking_Array" : [
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1,
+			1
+		],
+		"Workload" : [
+			0.126024,
+			0.124973,
+			0.124631,
+			0.124731,
+			0.124564,
+			0.125202,
+			0.124731,
+			0.125144
+		],
+		"Arrival_Rate" : 0.052483,
+		"Time_Based_Workload" : [
+			0.109017,
+			0.119808,
+			0.117945,
+			0.118527,
+			0.129753,
+			0.116487,
+			0.142475,
+			0.145989
+		]
+	},
+	"Collector" : {
+		"FF::Node_Subclass" : "ff::ff_gatherer",
+		"Type" : "FF::GATHERER",
+		"Service_Time" : 0.007717,
+		"Assigned_Processor" : 1,
+		"Filter" : {
+			"FF::Node_Subclass" : "Collector_advance"
+		}
+	}
+}

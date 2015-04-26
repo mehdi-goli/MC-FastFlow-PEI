@@ -1,0 +1,19 @@
+{
+	"FF::Node_Subclass" : "test",
+	"Child1" : {
+		"id" : 1
+	},
+	"FF::Node_Subclass" : "test",
+	"Child1" : {
+		"id" : 1
+	},
+	"String Node" : "",
+	"Integer Node" : 42,
+	"Floating Point Node" : 3.14,
+	"Boolean Node" : true,
+	"ArrayOfNumbers" : [
+		16,
+		42,
+		128
+	]
+}

@@ -1,0 +1,2 @@
+nbody advance 		Original		VIP
+latop			16.1828			13.8605

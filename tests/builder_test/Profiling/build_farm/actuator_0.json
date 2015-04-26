@@ -1,0 +1,63 @@
+{
+	"FF::Node_Subclass" : "ff::ff_farm<ff::adaptive_loadbalancer, ff::ff_gatherer>",
+	"Type" : "FF::FARM",
+	"Local_ID" : -1,
+	"Workers" : [
+		{
+			"FF::Node_Subclass" : "Worker",
+			"Type" : "FF::NODE",
+			"Local_ID" : 0,
+			"Assigned_Processor" : 2,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "Worker",
+			"Type" : "FF::NODE",
+			"Local_ID" : 1,
+			"Assigned_Processor" : 3,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "Worker",
+			"Type" : "FF::NODE",
+			"Local_ID" : 2,
+			"Assigned_Processor" : 0,
+			"Status" : 1
+		},
+		{
+			"FF::Node_Subclass" : "Worker",
+			"Type" : "FF::NODE",
+			"Local_ID" : 3,
+			"Assigned_Processor" : 1,
+			"Status" : 1
+		}
+	],
+	"Emitter" : {
+		"FF::Node_Subclass" : "ff::adaptive_loadbalancer",
+		"Type" : "FF::LOADBALANCER",
+		"Assigned_Processor" : 3,
+		"Filter" : {
+			"FF::Node_Subclass" : "Emitter"
+		},
+		"Masking_Array" : [
+			1,
+			1,
+			1,
+			1
+		],
+		"Workload" : [
+			0.294769,
+			0.254238,
+			0.333427,
+			0.117567
+		]
+	},
+	"Collector" : {
+		"FF::Node_Subclass" : "ff::ff_gatherer",
+		"Type" : "FF::GATHERER",
+		"Assigned_Processor" : 0,
+		"Filter" : {
+			"FF::Node_Subclass" : "Collector"
+		}
+	}
+}

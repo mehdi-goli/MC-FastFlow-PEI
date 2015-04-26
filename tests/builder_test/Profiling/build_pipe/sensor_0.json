@@ -1,0 +1,41 @@
+{
+	"FF::Node_Subclass" : "ff::ff_pipeline",
+	"Type" : "FF::PIPELINE",
+	"Local_ID" : -1,
+	"Stages" : [
+		{
+			"FF::Node_Subclass" : "Stage",
+			"Type" : "FF::NODE",
+			"Local_ID" : 0,
+			"Assigned_Processor" : 2,
+			"Data_Size" : 0,
+			"Total_Number_Of_Tasks" : 6,
+			"Total_SVC_Ticks" : 594543,
+			"Minimum_SVC_Tick" : 633,
+			"Maximum_SVC_Tick" : 321768,
+			"Sampling_Rate" : 0,
+			"Samlped_SVC_Tick_Distribution" : [],
+			"Push_Delay_Count" : 0,
+			"Push_Delay_Ticks" : 0,
+			"Pop_Delay_Count" : 7,
+			"Pop_Delay_Ticks" : 7000
+		},
+		{
+			"FF::Node_Subclass" : "Stage",
+			"Type" : "FF::NODE",
+			"Local_ID" : 1,
+			"Assigned_Processor" : 3,
+			"Data_Size" : 0,
+			"Total_Number_Of_Tasks" : 5,
+			"Total_SVC_Ticks" : 286968,
+			"Minimum_SVC_Tick" : 39833,
+			"Maximum_SVC_Tick" : 112692,
+			"Sampling_Rate" : 0,
+			"Samlped_SVC_Tick_Distribution" : [],
+			"Push_Delay_Count" : 0,
+			"Push_Delay_Ticks" : 0,
+			"Pop_Delay_Count" : 10,
+			"Pop_Delay_Ticks" : 10000
+		}
+	]
+}

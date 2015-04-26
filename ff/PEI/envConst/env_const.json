@@ -1,0 +1,13 @@
+{
+	"Device" :{ 
+		"Name": "CPU",
+		"Maximum_BB_Per_Device": 1
+	},
+	"Device" :{ 
+		"Name": "GPU",
+		"Maximum_BB_Per_Device": 1
+	},
+	"Damping_Ratio":1.0,
+	"Priority_Policy":"variable",
+	"Component_Switch_Mode":"average"
+}

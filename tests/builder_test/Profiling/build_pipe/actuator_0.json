@@ -1,0 +1,19 @@
+{
+	"FF::Node_Subclass" : "ff::ff_pipeline",
+	"Type" : "FF::PIPELINE",
+	"Local_ID" : -1,
+	"Stages" : [
+		{
+			"FF::Node_Subclass" : "Stage",
+			"Type" : "FF::NODE",
+			"Local_ID" : 0,
+			"Assigned_Processor" : 2
+		},
+		{
+			"FF::Node_Subclass" : "Stage",
+			"Type" : "FF::NODE",
+			"Local_ID" : 1,
+			"Assigned_Processor" : 3
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"FF::Node_Subclass" : "ff_pipeline",
+	"Profile_and_Tune" : true,
+	"Recursive" : true,
+	"Stages" : [
+		{
+			"FF::Node_Subclass" : "Stage"
+		},
+		{
+			"FF::Node_Subclass" : "Stage"
+		}
+	]
+}

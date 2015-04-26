@@ -1,0 +1,29 @@
+{
+    "FF::Node_Subclass" : "ff::ff_pipeline",
+    "Profile_and_Tune" :true,
+    "Stages" : [
+        {
+            "FF::Node_Subclass" : "Stage1"
+        },
+        {
+            "FF::Node_Subclass" : "ff::ff_farm<ff::ff_loadbalancer, ff::ff_gatherer>",
+            "Workers" : [
+                {
+                    "FF::Node_Subclass" : "ff::ff_pipeline",
+                    "num_worker" : 4,
+                    "Stages" : [
+                        {
+                            "FF::Node_Subclass" : "Stage2_1"
+                        },
+                        {
+                            "FF::Node_Subclass" : "Stage2_2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "FF::Node_Subclass" : "Stage3"
+        }
+    ]
+}

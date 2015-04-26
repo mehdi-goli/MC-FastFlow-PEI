@@ -1,0 +1,19 @@
+{
+    "FF::Node_Subclass" : "ff_farm<ff_loadbalancer, ff_gatherer>",
+    "Profile_and_Tune" :true,
+    "Collector" : {
+        "FF::Node_Subclass" : "Collector",
+	"function_name"	: "f_collector"
+    },
+    "Emitter" : {
+        "FF::Node_Subclass" : "Emitter",
+	"function_name"	: "f_emitter"
+    },
+    "Workers" : [
+        {
+            "FF::Node_Subclass" : "FF_NODE",
+	    "function_name" : "f_emitter",
+	    "num_worker":4
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+	"FF::Node_Subclass" : "ff::ff_pipeline",
+	"Type" : "FF::PIPELINE",
+	"Local_ID" : -1,
+	"Stages" : [
+		{
+			"FF::Node_Subclass" : "Stage1",
+			"Type" : "FF::NODE",
+			"Local_ID" : 0,
+			"Assigned_Processor" : 2
+		},
+		{
+			"FF::Node_Subclass" : "ff::ff_farm<ff::ff_loadbalancer, ff::ff_gatherer>",
+			"Type" : "FF::FARM",
+			"Local_ID" : 1,
+			"Workers" : [
+				{
+					"FF::Node_Subclass" : "ff::ff_pipeline",
+					"Type" : "FF::PIPELINE",
+					"Local_ID" : 0,
+					"Stages" : [
+						{
+							"FF::Node_Subclass" : "Stage2_1",
+							"Type" : "FF::NODE",
+							"Local_ID" : 0,
+							"Assigned_Processor" : 3
+						},
+						{
+							"FF::Node_Subclass" : "Stage2_2",
+							"Type" : "FF::NODE",
+							"Local_ID" : 1,
+							"Assigned_Processor" : 0
+						}
+					],
+					"Status" : 1
+				},
+				{
+					"FF::Node_Subclass" : "ff::ff_pipeline",
+					"Type" : "FF::PIPELINE",
+					"Local_ID" : 1,
+					"Stages" : [
+						{
+							"FF::Node_Subclass" : "Stage2_1",
+							"Type" : "FF::NODE",
+							"Local_ID" : 0,
+							"Assigned_Processor" : 1
+						},
+						{
+							"FF::Node_Subclass" : "Stage2_2",
+							"Type" : "FF::NODE",
+							"Local_ID" : 1,
+							"Assigned_Processor" : 2
+						}
+					],
+					"Status" : 1
+				},
+				{
+					"FF::Node_Subclass" : "ff::ff_pipeline",
+					"Type" : "FF::PIPELINE",
+					"Local_ID" : 2,
+					"Stages" : [
+						{
+							"FF::Node_Subclass" : "Stage2_1",
+							"Type" : "FF::NODE",
+							"Local_ID" : 0,
+							"Assigned_Processor" : 1
+						},
+						{
+							"FF::Node_Subclass" : "Stage2_2",
+							"Type" : "FF::NODE",
+							"Local_ID" : 1,
+							"Assigned_Processor" : 3
+						}
+					],
+					"Status" : 1
+				},
+				{
+					"FF::Node_Subclass" : "ff::ff_pipeline",
+					"Type" : "FF::PIPELINE",
+					"Local_ID" : 3,
+					"Stages" : [
+						{
+							"FF::Node_Subclass" : "Stage2_1",
+							"Type" : "FF::NODE",
+							"Local_ID" : 0,
+							"Assigned_Processor" : 2
+						},
+						{
+							"FF::Node_Subclass" : "Stage2_2",
+							"Type" : "FF::NODE",
+							"Local_ID" : 1,
+							"Assigned_Processor" : 1
+						}
+					],
+					"Status" : 1
+				}
+			],
+			"Emitter" : {
+				"FF::Node_Subclass" : "ff::ff_loadbalancer",
+				"Type" : "FF::LOADBALANCER",
+				"Assigned_Processor" : 0,
+				"Masking_Array" : [
+					1,
+					1,
+					1,
+					1
+				],
+				"Workload" : [
+					0.219301,
+					0.209054,
+					0.124271,
+					0.447375
+				]
+			},
+			"Collector" : {
+				"FF::Node_Subclass" : "ff::ff_gatherer",
+				"Type" : "FF::GATHERER",
+				"Assigned_Processor" : 0
+			}
+		},
+		{
+			"FF::Node_Subclass" : "Stage3",
+			"Type" : "FF::NODE",
+			"Local_ID" : 2,
+			"Assigned_Processor" : 3
+		}
+	]
+}
