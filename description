@@ -1,0 +1,2 @@
+Here for each device one program and one command queue and one context are created and each worker is going to have its own kernel  
+--it is using the lib.so file
