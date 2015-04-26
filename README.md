@@ -17,7 +17,7 @@ the run function.
 #### Usage
 To construct an application:
 
-* Add "#include <ff/PEI/DSRIManagerNode.hpp>" on top of your application. 
+* Add "#include \<ff/PEI/DSRIManagerNode.hpp\>" on top of your application. 
 * For each application, invoke "PROFILE" method on the root component to monitor and tune the skeleton tree. This method must be called once per skeleton. This method will activate VIP instrumentation on that subtree. Using this method it is possible to run multiple application (multi-tenant application) efficiently in an interactive mode. 
 
 PROFILE(&comp);
