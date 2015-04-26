@@ -33,7 +33,7 @@
  *
  ****************************************************************************
  Mehdi Goli: m.goli@rgu.ac.uk*/
-#include "/users/mehdi/Thesis/fastflow-2.0.2-paraphrase/examples/Image_processing/Funcs/functions.cpp"
+#include "examples/Image_processing/Funcs/functions.cpp"
 #include <ff/PEI/DSRIManagerNode.hpp>
 #if defined(FASTFLOW_OPENCL)
 	#include <ff/oclnode.hpp>
