@@ -52,6 +52,7 @@
 #if defined(FASTFLOW_OPENCL)
 #include <ff/PEI/cl_environment.hpp>
 #include <map>
+#include <algorithm>
 #endif
  
 using namespace std;
