@@ -32,7 +32,7 @@
  *  the GNU General Public License.
  *
  ****************************************************************************
- Mehdi Goli: m.goli@rgu.ac.uk*/
+ Mehdi Goli: goli.mehdi@gmail.com*/
 #include "examples/Image_processing/Funcs/functions.cpp"
 #include <ff/PEI/DSRIManagerNode.hpp>
 #if defined(FASTFLOW_OPENCL)
