@@ -32,8 +32,8 @@
  *  the GNU General Public License.
  *
  ****************************************************************************
- Mehdi Goli: m.goli@rgu.ac.uk*/
- /*
+Mehdi Goli: goli.mehdi@gmail.com*/
+/*
  This is the sobel filter application that does not use PEI for performance enhancement
  */
 #include "examples/Image_processing/Funcs/functions.cpp"
