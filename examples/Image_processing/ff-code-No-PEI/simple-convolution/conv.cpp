@@ -32,7 +32,7 @@
  *  the GNU General Public License.
  *
  ****************************************************************************
-Mehdi Goli: goli.mehdi@gmail.com
+Mehdi Goli: goli.mehdi@gmail.com */
 /*
  This is the convolution application that does not use PEI for performance enhancement
  */
