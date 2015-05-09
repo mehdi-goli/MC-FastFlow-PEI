@@ -37,7 +37,8 @@
  This is the sobel filter application that does not use PEI for performance enhancement
  */
 #include "examples/Image_processing/Funcs/functions.cpp"
-#include <ff/PEI/DSRIManagerNode.hpp>
+#include <ff/farm.hpp>
+#include <ff/pipeline.hpp>
 #if defined(FASTFLOW_OPENCL)
 	#include <ff/oclnode.hpp>
 #else
